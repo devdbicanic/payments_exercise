@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20180718231450) do
 
   create_table "payments", force: :cascade do |t|
     t.decimal "amount"
-    t.datetime "date"
     t.integer "loan_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
