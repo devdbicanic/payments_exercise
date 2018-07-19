@@ -6,7 +6,6 @@ A payment should not be able to be created that exceeds the outstanding balance 
 
 ## My notes 
 
-* First I tried to detemine what I was creating.
   * I wanted to first determine what DB schema I would need
         * It appeared it was a one to many relationship between a Loan can have many Payments
         * I ran the command "rails g model Payment amount:decimal loans:references"
